@@ -1,4 +1,4 @@
-import 'package:project2/project2.dart';
+import 'package:project2/src/space_adventure.dart';
 import 'package:test/test.dart';
 
 void main() {
