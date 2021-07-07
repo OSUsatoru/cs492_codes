@@ -1,4 +1,5 @@
 {
+    "name": "Solar System",
     "planets": [
         {
             "name": "Mercury",

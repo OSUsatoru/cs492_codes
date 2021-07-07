@@ -1,7 +1,10 @@
-
+import 'dart:io';
+import 'dart:async';
+import 'dart:convert';
 import 'package:project2/dart_space_adventure.dart';
 
-const systemNam = 'Solar System';
+//const systemNam = 'Solar System';
+
 const planetData = {
     "Mercury": 'A very hot planet, close to the sun.',
     "Venus": 'It\'s veru cloudy here!',
@@ -16,6 +19,18 @@ const planetData = {
 };
 
 void main(List<String> arguments) {
+  /*
+  final File file = new File('bin/planetarySystem.json');
+
+  Stream fread = file.openRead();
+  List<String> planetData=[];
+
+  fread.transform(utf8.decoder)
+        .transform(const LineSplitter())
+        .forEach((line) {
+          planetData.add(line);
+        });
+  */
   SpaceAdventure(
     planetarySystem: PlanetarySystem(
       name: "Solar System", planets: mockPlanets()
